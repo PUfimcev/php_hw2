@@ -218,16 +218,15 @@ echo "<p><b>Task 10</b></p>";
 function getSquare($n = null){
     if(!isset($n) || !is_numeric($n) || $n <= 0) return "Enter a number more than 0!";
     for($i = 0; $i < $n; $i++){
+        $sign = "";
         for($j = 0; $j <$n; $j++){
-            $sign = "";
             $sign .= " *";
-            echo $sign;
         }
-        echo "</br>";
+        echo "<p style=\"line-height: 10%;\">$sign</p>";
     }
 }
 
-getSquare(4);
+getSquare(5);
 echo "<hr>";   
 ?>
 
